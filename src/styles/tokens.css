@@ -1,0 +1,114 @@
+/* Crosshair Studio — design tokens. Dark is the default theme. */
+
+:root,
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #101014;
+  --bg-2: #181820;
+  --card: #20202a;
+  --card-hover: #252531;
+  --elevated: #2a2a36;
+  --input: #16161d;
+  --border: #30303b;
+  --border-strong: #3e3e4b;
+  --text: #f5f5f7;
+  --text-2: #9999a8;
+  --text-3: #6c6c7b;
+
+  --accent: #8b5cf6;
+  --accent-hover: #9b72f8;
+  --accent-press: #7a4ae6;
+  --accent-text: #c4b5fd;
+  --accent-soft: rgba(139, 92, 246, 0.14);
+  --accent-ring: rgba(139, 92, 246, 0.45);
+  --on-accent: #ffffff;
+
+  --success: #34d399;
+  --success-soft: rgba(52, 211, 153, 0.13);
+  --warning: #fbbf24;
+  --warning-soft: rgba(251, 191, 36, 0.13);
+  --danger: #f87171;
+  --danger-soft: rgba(248, 113, 113, 0.13);
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 6px 18px -6px rgba(0, 0, 0, 0.5), 0 2px 6px rgba(0, 0, 0, 0.25);
+  --shadow-lg: 0 24px 48px -12px rgba(0, 0, 0, 0.6);
+  --glow: 0 0 0 1px rgba(139, 92, 246, 0.35), 0 8px 28px -8px rgba(139, 92, 246, 0.45);
+
+  --preview-bg: #0b0b0f;
+  --scrollbar: #33333f;
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+  --bg: #f3f3f7;
+  --bg-2: #ffffff;
+  --card: #ffffff;
+  --card-hover: #f8f8fb;
+  --elevated: #ffffff;
+  --input: #f6f6f9;
+  --border: #e2e2ea;
+  --border-strong: #cfcfda;
+  --text: #15151c;
+  --text-2: #5d5d6c;
+  --text-3: #8b8b99;
+
+  --accent: #7c3aed;
+  --accent-hover: #6d28d9;
+  --accent-press: #5b21b6;
+  --accent-text: #6d28d9;
+  --accent-soft: rgba(124, 58, 237, 0.1);
+  --accent-ring: rgba(124, 58, 237, 0.35);
+
+  --success: #059669;
+  --success-soft: rgba(5, 150, 105, 0.1);
+  --warning: #b45309;
+  --warning-soft: rgba(217, 119, 6, 0.12);
+  --danger: #dc2626;
+  --danger-soft: rgba(220, 38, 38, 0.1);
+
+  --shadow-sm: 0 1px 2px rgba(20, 20, 40, 0.06);
+  --shadow-md: 0 6px 18px -8px rgba(20, 20, 40, 0.18), 0 2px 6px rgba(20, 20, 40, 0.06);
+  --shadow-lg: 0 24px 48px -16px rgba(20, 20, 40, 0.25);
+  --glow: 0 0 0 1px rgba(124, 58, 237, 0.3), 0 8px 24px -10px rgba(124, 58, 237, 0.4);
+
+  --preview-bg: #e8e8ee;
+  --scrollbar: #cfcfda;
+}
+
+:root {
+  --font: "Inter Variable", "Inter", "Segoe UI Variable Text", "Segoe UI", system-ui, sans-serif;
+  --mono: "Cascadia Mono", "Cascadia Code", Consolas, ui-monospace, monospace;
+
+  --radius-xs: 6px;
+  --radius-sm: 8px;
+  --radius: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 22px;
+
+  --ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --dur-fast: 120ms;
+  --dur: 180ms;
+  --dur-slow: 280ms;
+
+  --titlebar-h: 40px;
+  --sidebar-w: 244px;
+  --sidebar-w-compact: 72px;
+}
+
+/* Lite mode: no animation at all. */
+:root[data-lite="true"] *,
+:root[data-lite="true"] *::before,
+:root[data-lite="true"] *::after {
+  animation: none !important;
+  transition: none !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 1ms !important;
+    transition-duration: 1ms !important;
+  }
+}

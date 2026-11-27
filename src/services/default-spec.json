@@ -1,0 +1,29 @@
+{
+  "kind": "crosshair",
+  "dot": {
+    "size": 4,
+    "color": "#00FF66",
+    "opacity": 1,
+    "shape": "circle",
+    "outline": { "enabled": true, "color": "#000000", "thickness": 1 },
+    "halo": { "enabled": false, "color": "#FFFFFF", "size": 6, "opacity": 0.35 }
+  },
+  "crosshair": {
+    "shape": "cross_gap",
+    "lengthH": 6,
+    "lengthV": 6,
+    "thickness": 2,
+    "gap": 3,
+    "color": "#00FF66",
+    "opacity": 1,
+    "rotation": 0,
+    "outline": { "enabled": true, "color": "#000000", "thickness": 1 },
+    "shadow": { "enabled": false, "color": "#000000", "opacity": 0.6, "offsetX": 1, "offsetY": 1, "blur": 2 },
+    "dotSize": 2,
+    "dotShape": "square",
+    "circleRadius": 10,
+    "circleThickness": 1.5,
+    "splitGap": 3,
+    "custom": { "top": true, "right": true, "bottom": true, "left": true, "circle": false, "dot": false }
+  }
+}
